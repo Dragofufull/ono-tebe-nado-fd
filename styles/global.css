@@ -1,38 +1,24 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+    margin: 0;
 }
 
-body {
-  width: 1100px;
-  margin: 0 auto;
-  font-family: Raleway, sans-serif;
+
+.header__link_active {
+    border-bottom: 2px solid #000; 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-blockquote {
-  margin: 0;
-  padding: 0;
+.card__title p span {
+    border-bottom: 2px solid #FFFFFF; 
+    display: inline; 
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
-a {
-  color: inherit;
+.about__logo-image {
+    width: 148px;
+    height: 114px;
 }
 
-img {
-  width: 100%;
-}
-
-button {
-  font: inherit;
+.footer_menu_border {
+    border-bottom: 1px solid #000;
 }
