@@ -1,10 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('./Raleway-Regular.woff2') format('woff2'),
+       url('./Raleway-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./Raleway-Bold.woff2') format('woff2'),
+       url('./Raleway-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 .aligned-text {
     font-size: 100px;     
-    font-style: bold;
-     font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-transform: uppercase;  
     letter-spacing: 14px;
@@ -13,68 +31,62 @@
 .cover__description-text span {
     font-size: 22px;
     font-weight: 400;
-     font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
 }
 
 .bet-button {
     font-size: 22px;
-     font-family: Raleway;
-    font-weight: 500;  
-    font-style: Medium;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .lots__heading {
     font-size: 40px;
     font-weight: 700;
-     font-family: Raleway;
-    font-style: bold;
+    font-family: 'Raleway', sans-serif;
 }
 
 .card__title p {
     font-weight: 700;
     font-size: 22px;
-     font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
 }
 
 .card__text p {
     font-weight: 400;
     font-size: 20px;
-     font-family: Raleway;
-    font-style: Regular;
+     font-family: 'Raleway', sans-serif;
 }
 
 .lots__look-more-link a {
     font-weight: 400;
     font-size: 20px;
-     font-family: Raleway;
-    font-style: Regular;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header__link {
     font-size: 18px;
     font-weight: 400;
-     font-family: Raleway;
-    font-style: Regular;
+    font-family: 'Raleway', sans-serif;
 }
 
 .about__title {
     font-size: 40px;
     font-weight: 700;
-    font-style: bold;
-     font-family: Raleway;
-     line-height: 100% ; 
+    font-family: 'Raleway', sans-serif;
+    line-height: 100% ; 
 }
 
 .about__text {
     font-size: 20px;
     font-weight: 400;
-    font-style: Regular, sans-serif;
     max-width: 688px;
     max-height: 120px;
     letter-spacing: 0em;
     line-height: 24px; 
-     font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     position: relative;
     top: 80px;
 
@@ -92,7 +104,6 @@
     color: #000000;
     font-size: 18px;
     font-weight: 400;
-    font-style: regular;
-     font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
      text-decoration: none;
 }
