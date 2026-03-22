@@ -1,4 +1,4 @@
-/* место для вашего кода */
+
 .aligned-text {
     color: #FFFFFF;
 }
@@ -235,7 +235,8 @@
   grid-template-columns: 240px 693px;
   column-gap: 72px;
   max-width: 1052px;
-    height: 595px;
+    /* height: 595px; */
+    min-height: 595px;
   margin: 120px auto 0;
   padding-left: 47px; 
 }
@@ -260,38 +261,29 @@
   gap: 24px;
 }
 
-.footer {
-    max-width: 100%;
+ .footer {
+     display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1052px;
     height: 180px;
-    margin-top: 180px;
-    display: flex;
-    position: relative;
+    margin: 180px auto 0; 
+    padding: 0 50px; 
 }
 
 .footer_address {
-    width: 264.573486328125px;
-    height: 98px;
-    position: absolute;
-    left: 50px;
+    width: 265px;
 }
 
 .footer__menu {
-    width: 163.89999389648438px;
-    height: 64px;
-     position: absolute;
-    left: 468.6px;
+    width: 164px;
 }
 
 .footer_social {
-    width: 240px;
-    height: 48px;
-    position: absolute;
-    left: 810px;
-    gap: 48px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    gap: 48px;
+    width: 240px;
+} 
 
 .footer__social-icon {
     width: 48px;
