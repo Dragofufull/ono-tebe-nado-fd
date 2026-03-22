@@ -86,7 +86,7 @@
     
 .overlay {
     position: relative;
-    background-image: url(../images/oil-painting-beautiful-lotus-flower_1232-1978.avif);
+    background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@
     width: 334px;
     height: 596px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                 url(../images/photo.png);
+                 url(../images/card-lot-01.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -194,7 +194,7 @@
     width: 334px;
     height: 596px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                 url(../images/photo\ \(1\).png);
+                 url(../images/card-lot-02.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -208,7 +208,7 @@
     width: 334px;
     height: 596px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                 url(../images/photo\ \(2\).png);
+                 url(../images/card-lot-03.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -229,39 +229,6 @@
     align-items: flex-end; 
     justify-content: flex-start;
 }
-
-/* .about {
-  width: 1052px;
-  height: 595px;
-  width: calc(100% - 48px); 
-  margin: 0 auto;
-  margin-right: auto;
- top: 120px;
-  position: relative;
-}
-
-.about__logo {
-  width: 240px;
-  height: 240px;
-  position: absolute;
-  background-color: #000000;
-  top: 35px;
-  left: 47px;
-  border-radius: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about__column {
-    width: 693px;
-    height: 449px;
-    position: absolute;
-    top: 80px;
-    left: 47px + 240px + 72px;
-    left: calc(47px + 240px + 72px);
-} */
 
 .about {
   display: grid;
