@@ -1,22 +1,31 @@
 name: Tests
 
 on:
-  push:
-    branches:
-      - '**'
-    tags:
-      - '**'
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+
+# Добавляем переменную, которую просит GitHub, чтобы принудительно использовать Node 24
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Check if the repository is private
-        run: exit 1
-        if: ${{github.event.repository.private}}
-      - name: Tests
-        uses: Yandex-Practicum/test-project-action@v1
-        with:
-          project: 'ono-tebe-nado-fd'
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        # Обновил с v3 до v4
+        uses: actions/checkout@v4 
+        
+      - name: Check if the repository is private
+        run: exit 1
+        if: ${{github.event.repository.private}}
+        
+      - name: Tests
+        # Здесь мы оставляем v1, так как это экшен Практикума, 
+        # но за счет env выше он будет работать тише
+        uses: Yandex-Practicum/test-project-action@v1
+        with:
+          project: 'ono-tebe-nado-fd'
