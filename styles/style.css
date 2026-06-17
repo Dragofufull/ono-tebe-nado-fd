@@ -49,8 +49,10 @@ ul, ol {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1140px;
+  width: 100%;
+  max-width: 1140px;
   gap: 30px;
+  padding: 0 20px;
 }
 
 .content__details {
@@ -58,12 +60,14 @@ ul, ol {
   flex-direction: column;
   flex-grow: 1;
   align-self: stretch;
+  min-width: 0;
 }
 
 .result {
-  width: 711px;
+  width: 100%;
+  max-width: 711px;
   align-self: flex-end;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .result__video-container {
@@ -93,12 +97,12 @@ ul, ol {
   color: #545050;
 }
 
-/* Форма поиска */
 .search-form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 15px;
 }
 
 .search-form__fieldset {
@@ -305,4 +309,22 @@ ul, ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px 20px;
+  }
+
+  .result {
+    max-width: 100%;
+    align-self: center;
+  }
+
+  .search-form {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
