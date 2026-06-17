@@ -86,7 +86,7 @@ ul, ol {
   line-height: 94%;
   color: #FFFFFF;
   font-size: 75px;
-  font-family: "Oswald";
+  font-family: "Raleway";
   text-transform: uppercase;
 }
 
@@ -283,7 +283,7 @@ ul, ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald";
+  font-family: "Raleway";
   font-size: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
